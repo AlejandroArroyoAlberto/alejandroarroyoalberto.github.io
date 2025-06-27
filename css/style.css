@@ -49,13 +49,13 @@ header nav a:hover {
 }
 
 .portrait {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   margin: 1.5rem auto;
   display: block;
-  filter: grayscale(100%) contrast(1.1);
+  filter: grayscale(0%) contrast(1.1);
   border: 4px solid white;
 }
 
@@ -75,7 +75,8 @@ section {
   text-align: center;
 }
 
-#contacto a {
+#contacto a,
+#contacto a[href^="mailto"] {
   color: var(--texto-principal);
   text-decoration: none;
 }
@@ -108,6 +109,30 @@ h2 {
 .btn-download:hover {
   background-color: var(--texto-secundario);
   color: #000;
+}
+
+footer {
+  background: #000;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .portrait {
+    width: 140px;
+    height: 140px;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
 }
 
 #galeria {
@@ -147,29 +172,4 @@ h2 {
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
-}
-
-
-footer {
-  background: #000;
-  text-align: center;
-  color: white;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
-
-  .portrait {
-    width: 140px;
-    height: 140px;
-  }
-
-  section {
-    padding: 2rem 1rem;
-  }
 }
