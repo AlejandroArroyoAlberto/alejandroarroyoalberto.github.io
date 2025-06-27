@@ -1,4 +1,4 @@
-/* Estilos globales */
+/* TIPOGRAFÍA */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap');
 
 :root {
@@ -6,9 +6,9 @@
   --texto-principal: #f7f4f1;
   --texto-secundario: #e0d7cd;
   --acento: #bfa675;
-  --sombra: #333333;
 }
 
+/* RESET GLOBAL */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -17,21 +17,7 @@ body {
   line-height: 1.6;
 }
 
-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)), url('../images/inicio1.jpg') center top/cover no-repeat;
-  padding: 8rem 2rem 4rem;
-  text-align: center;
-  color: white;
-}
-
-header h1 {
-  font-family: 'Caveat', cursive;
-  font-size: 4rem;
-  margin: 0.5rem 0;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-}
-
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -53,6 +39,8 @@ header h1 {
 .nav-links {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li a {
@@ -60,8 +48,14 @@ header h1 {
   text-decoration: none;
   margin-left: 2rem;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+.nav-links li a:hover {
+  color: var(--acento);
+}
+
+/* HAMBURGER */
 .burger {
   display: none;
   cursor: pointer;
@@ -75,135 +69,31 @@ header h1 {
   transition: all 0.3s ease;
 }
 
-/* Responsive */
-
-@media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    right: 0;
-    top: 60px;
-    height: 100vh;
-    background-color: #0f0f0f;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.4s ease-in;
-  }
-
-  .nav-links li {
-    margin: 2rem 0;
-  }
-
-  .burger {
-    display: block;
-  }
-
-  .nav-active {
-    transform: translateX(0);
-  }
-
-  .burger.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .burger.toggle .line2 {
-    opacity: 0;
-  }
-
-  .burger.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-}
-
-
-.portrait {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 1.5rem auto;
-  display: block;
-  filter: grayscale(0%) contrast(1.1);
-  border: 4px solid white;
-}
-
-section {
-  padding: 4rem 1rem;
-  max-width: 960px;
-  margin: auto;
-}
-
-#biografia {
-  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)), url('../images/contacto1.jpg') center/cover no-repeat;
-  background-attachment: fixed;
-}
-
-#contacto {
-  background-color: var(--fondo-oscuro);
-  text-align: center;
-}
-
-#contacto a,
-#contacto a[href^="mailto"] {
-  color: var(--texto-principal);
-  text-decoration: none;
-}
-
-h2 {
-  color: var(--acento);
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  font-family: 'Caveat', cursive;
-}
-
-.social-icons img {
-  width: 40px;
-  margin: 0 10px;
-}
-
-.btn-download {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--acento);
-  color: var(--fondo-oscuro);
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn-download:hover {
-  background-color: var(--texto-secundario);
-  color: #000;
-}
-
-footer {
-  background: #000;
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)),
+    url('../images/inicio1.jpg') center top/cover no-repeat;
+  padding: 8rem 2rem 4rem;
   text-align: center;
   color: white;
-  padding: 1.5rem;
-  font-size: 0.9rem;
+  margin-top: 60px; /* para no tapar la navbar */
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
-
-  .portrait {
-    width: 140px;
-    height: 140px;
-  }
-
-  section {
-    padding: 2rem 1rem;
-  }
+.hero h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  margin: 0.5rem 0;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
+.hero p {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* GALERÍA */
 #galeria {
   background-color: #121212;
   padding: 4rem 1rem;
@@ -242,32 +132,66 @@ footer {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-/* hamburger animation */
-.burger {
-  display: none;
-  cursor: pointer;
+
+/* BIOGRAFIA */
+#biografia {
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.95)),
+    url('../images/contacto1.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  padding: 4rem 1rem;
 }
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: var(--texto-principal);
-  margin: 5px;
-  transition: all 0.3s ease;
+/* CONTACTO */
+#contacto {
+  background-color: var(--fondo-oscuro);
+  text-align: center;
+  padding: 4rem 1rem;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
+#contacto h2 {
+  color: var(--acento);
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.nav-links li a {
+#contacto a {
   color: var(--texto-principal);
   text-decoration: none;
-  margin-left: 2rem;
-  font-weight: bold;
 }
 
+.social-icons img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--acento);
+  color: var(--fondo-oscuro);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: var(--texto-secundario);
+  color: #000;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  text-align: center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -285,11 +209,11 @@ footer {
   .nav-links li {
     margin: 2rem 0;
   }
-  .nav-active {
-    transform: translateX(0);
-  }
   .burger {
     display: block;
+  }
+  .nav-active {
+    transform: translateX(0);
   }
   .burger.toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -300,5 +224,14 @@ footer {
   .burger.toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .slide-track img {
+    width: 200px;
+    height: 140px;
+  }
 }
-
