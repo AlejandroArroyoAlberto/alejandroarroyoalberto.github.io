@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alejandro Arroyo Alberto | Pianista</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-<header>
+
   <div class="navbar">
     <div class="logo">Alejandro Arroyo</div>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
     <nav>
       <ul class="nav-links">
         <li><a href="bio.html">Biografía</a></li>
         <li><a href="galeria.html">Galería</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
     </nav>
   </div>
-</header>
 
+  <header class="hero">
+    <h1>Alejandro Arroyo Alberto</h1>
+    <p>Pianista · Educador · Investigador</p>
+  </header>
 
   <section id="biografia">
     <h2>Biografía</h2>
@@ -33,35 +36,33 @@
     <p>Entre sus premios se encuentran el Primer Premio en el Concurso Internacional María Clara Cullell (Costa Rica, 2015); el Segundo Premio en el Concurso Iberoamericano para Jóvenes Pianistas (República Dominicana, 2016); el Premio Patrick W. Price en el 10º Festival Internacional de Piano del Estado de Texas (Estados Unidos, 2019); el Primer Premio en el Concurso de Piano Fryderyk Chopin para Centro y Sudamérica (Perú, 2020); el Primer Premio en el Concurso de Piano de la Asociación Nacional de Maestros de Música (MTNA) para Jóvenes Artistas del Estado de Colorado (2020 y 2021); el Premio de Pieza Comisionada y finalista en el Concurso Internacional de Piano del Estado de Texas (2022); el Cuarto Lugar en el Concurso Internacional José Jacinto Cuevas Yamaha (México, 2023); y el Primer Premio en el Concurso Southard (Estados Unidos, 2023).</p>
     <p>Ha sido miembro activo del capítulo universitario de la MTNA en UNC desde 2021, donde se desempeñó como profesor voluntario y como juez del 5º Concurso y Festival de Piano Juvenil MTNA-UNC en 2022. Más recientemente, trabajó como Manager del Colorado International Piano Academy & Festival. Actualmente reside en Costa Rica, donde ejerce como profesor y pianista.</p>
   </section>
-  
-<section id="galeria">
-  <h2>Galería</h2>
-  <div class="galeria-slider">
-    <div class="slide-track">
-      <!-- Secuencia original sin solo1.jpg -->
-      <img src="images/gallery-orquesta1.jpg" alt="Orquesta" />
-      <img src="images/gallery-prize1.jpg" alt="Premio" />
-      <img src="images/gallery-class.jpg" alt="Clase" />
-      <img src="images/gallery-solo2.jpg" alt="Solo" />
-      <img src="images/gallery-prize2.JPG" alt="Premio" />
-      <img src="images/contacto1.jpg" alt="Contacto" />
-      <img src="images/gallery-solo3.jpg" alt="Solo" />
-      <img src="images/gallery-prize3.JPG" alt="Premio" />
-      <img src="images/gallery-prize4.jpg" alt="Premio" />
 
-      <!-- Duplicar para efecto looping -->
-      <img src="images/gallery-orquesta1.jpg" alt="Orquesta" />
-      <img src="images/gallery-prize1.jpg" alt="Premio" />
-      <img src="images/gallery-class.jpg" alt="Clase" />
-      <img src="images/gallery-solo2.jpg" alt="Solo" />
-      <img src="images/gallery-prize2.JPG" alt="Premio" />
-      <img src="images/contacto1.jpg" alt="Contacto" />
-      <img src="images/gallery-solo3.jpg" alt="Solo" />
-      <img src="images/gallery-prize3.JPG" alt="Premio" />
-      <img src="images/gallery-prize4.jpg" alt="Premio" />
+  <section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria-slider">
+      <div class="slide-track">
+        <img src="images/gallery-orquesta1.jpg" alt="Orquesta" />
+        <img src="images/gallery-prize1.jpg" alt="Premio" />
+        <img src="images/gallery-class.jpg" alt="Clase" />
+        <img src="images/gallery-solo2.jpg" alt="Solo" />
+        <img src="images/gallery-prize2.JPG" alt="Premio" />
+        <img src="images/contacto1.jpg" alt="Contacto" />
+        <img src="images/gallery-solo3.jpg" alt="Solo" />
+        <img src="images/gallery-prize3.JPG" alt="Premio" />
+        <img src="images/gallery-prize4.jpg" alt="Premio" />
+        <!-- loop duplicado -->
+        <img src="images/gallery-orquesta1.jpg" alt="Orquesta" />
+        <img src="images/gallery-prize1.jpg" alt="Premio" />
+        <img src="images/gallery-class.jpg" alt="Clase" />
+        <img src="images/gallery-solo2.jpg" alt="Solo" />
+        <img src="images/gallery-prize2.JPG" alt="Premio" />
+        <img src="images/contacto1.jpg" alt="Contacto" />
+        <img src="images/gallery-solo3.jpg" alt="Solo" />
+        <img src="images/gallery-prize3.JPG" alt="Premio" />
+        <img src="images/gallery-prize4.jpg" alt="Premio" />
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="contacto">
     <h2>Contacto</h2>
@@ -80,15 +81,15 @@
   <footer>
     <p>&copy; 2025 Alejandro Arroyo Alberto. Todos los derechos reservados.</p>
   </footer>
-  <script>
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
 
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
-    burger.classList.toggle('toggle');
-  });
-</script>
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
 
 </body>
 </html>
