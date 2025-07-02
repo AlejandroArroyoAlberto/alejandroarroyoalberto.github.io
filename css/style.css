@@ -402,3 +402,8 @@ footer {
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(255,255,255,0.2);
 }
+
+.clases-fotos img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(255,255,255,0.3);
+}
