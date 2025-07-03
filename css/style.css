@@ -407,3 +407,77 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 4px 20px rgba(255,255,255,0.3);
 }
+
+#eventos {
+  background-color: #121212;
+  color: var(--texto-principal);
+  padding: 4rem 1rem;
+}
+
+#eventos h2 {
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  color: var(--acento);
+  margin-bottom: 2rem;
+}
+
+.event-filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: #222;
+  color: #f0f0f0;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--acento);
+  color: #000;
+}
+
+.event-list {
+  margin-bottom: 3rem;
+}
+
+.evento {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2rem;
+}
+
+.evento img {
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.evento img:hover {
+  transform: scale(1.05);
+}
+
+.evento-info {
+  flex: 1 1 300px;
+}
+
+.evento-info h3 {
+  color: var(--acento);
+  margin-top: 0;
+}
+
+.evento-info p {
+  margin: 0.5rem 0;
+}
+
