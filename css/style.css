@@ -32,17 +32,16 @@ header h1 {
   text-transform: uppercase;
 }
 
-.logo-nombre {
+.logo-nombre a {
   text-decoration: none;
-  color: var(--texto-principal);
+  color: #ffffff; /* blanco */
   transition: color 0.3s ease;
 }
 
-.logo-nombre:hover {
-  color: var(--acento); /* o el color de resalte que prefieras */
+.logo-nombre a:hover {
+  color: var(--acento); /* tu color dorado ya definido como variable */
   cursor: pointer;
 }
-
 
 header nav {
   margin-top: 1.5rem;
