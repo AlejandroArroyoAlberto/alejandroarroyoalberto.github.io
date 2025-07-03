@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eventos | Alejandro Arroyo Alberto</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Alejandro</h1>
+  <h1>Arroyo Alberto</h1>
+  <img src="images/headshot2.jpg" alt="Retrato Alejandro Arroyo" class="portrait">
+  <nav>
+    <a href="index.html#biografia">Biografía</a>
+    <a href="videos.html">Videos</a>
+    <a href="clases.html">Clases</a>
+    <a href="colaborativo.html">Pianista Colaborativo</a>
+    <a href="premios.html">Premios</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section id="eventos">
+  <h2>Conciertos y Eventos</h2>
+
+  <!-- Filtros -->
+  <div class="event-filters">
+    <button class="filter-btn active" data-year="all">Todos</button>
+    <button class="filter-btn" data-year="2024">2024</button>
+    <button class="filter-btn" data-year="2025">2025</button>
+  </div>
+
+  <!-- Eventos 2024 -->
+  <div class="event-list" data-year="2024">
+    <div class="evento">
+      <img src="images/eventos-2024-febrero-southard.jpg" alt="Southard 2024">
+      <div class="evento-info">
+        <h3>Ganadores Angie Southard Music Competition</h3>
+        <p><strong>Febrero 26, 2024</strong> — UNC Campus Commons Performance Hall</p>
+      </div>
+    </div>
+    <div class="evento">
+      <img src="images/eventos-2024-junio-elsalvador.jpg" alt="El Salvador 2024">
+      <div class="evento-info">
+        <h3>Recital en Fundación Miguel Ángel Ramírez</h3>
+        <p><strong>Junio 2024</strong> — Panchimalco, El Salvador</p>
+      </div>
+    </div>
+    <div class="evento">
+      <img src="images/eventos-2024-julio-crfestival.jpg" alt="CR Festival 2024">
+      <div class="evento-info">
+        <h3>Festival de Piano de Costa Rica</h3>
+        <p><strong>Julio 12, 2024</strong> — Teatro Nacional de Costa Rica</p>
+      </div>
+    </div>
+    <div class="evento">
+      <img src="images/eventos-2024-agosto-cipaf.jpg" alt="CIPAF 2024">
+      <div class="evento-info">
+        <h3>Colorado International Piano Academy & Festival</h3>
+        <p><strong>Julio 25 - Agosto 3, 2024</strong> — UNC Campus Commons & Milne Auditorium</p>
+      </div>
+    </div>
+    <div class="evento">
+      <img src="images/eventos-2024-noviembre-entropy.jpg" alt="Entropy Project 2024">
+      <div class="evento-info">
+        <h3>Entropy & Offbeatness</h3>
+        <p><strong>Noviembre 11, 2024</strong> — UNC (proyecto doctoral)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Eventos 2025 -->
+  <div class="event-list" data-year="2025">
+    <div class="evento">
+      <img src="images/eventos-2025-enero-seoul.jpg" alt="Seoul Recital 2025">
+      <div class="evento-info">
+        <h3>Guest Artist Recital</h3>
+        <p><strong>Enero 22, 2025</strong> — UNC en colaboración con Seoul National University of Education</p>
+      </div>
+    </div>
+    <div class="evento">
+      <img src="images/eventos-2025-marzo-uncrach.jpg" alt="UNC Concerto Rach 2025">
+      <div class="evento-info">
+        <h3>UNC Concerto Competition Winners Concert</h3>
+        <p><strong>Febrero 17, 2025</strong> — Campus Commons Performance Hall, UNC</p>
+      </div>
+    </div>
+    <div class="evento">
+      <img src="images/eventos-2025-abril-staupe.jpg" alt="Staupe Masterclass 2025">
+      <div class="evento-info">
+        <h3>Masterclass con Dr. Andrew Staupe</h3>
+        <p><strong>Abril 21, 2025</strong> — UNC Rehearsal Hall</p>
+      </div>
+    </div>
+    <div class="evento">
+      <img src="images/eventos-2025-mayo-doctoralrecital.jpg" alt="Doctoral Recital 2025">
+      <div class="evento-info">
+        <h3>Recital Doctoral</h3>
+        <p><strong>Mayo 2025</strong> — Milne Auditorium, UNC</p>
+      </div>
+    </div>
+    <div class="evento">
+      <img src="images/eventos-2025-junio-kushkatan.jpg" alt="Kushkatan 2025">
+      <div class="evento-info">
+        <h3>Sonidos de Kushkatan</h3>
+        <p><strong>Junio 21, 2025</strong> — Panchimalco, El Salvador</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Alejandro Arroyo Alberto. Todos los derechos reservados.</p>
+</footer>
+
+<!-- script filtrado -->
+<script>
+  const buttons = document.querySelectorAll('.filter-btn');
+  const lists = document.querySelectorAll('.event-list');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const year = btn.dataset.year;
+      lists.forEach(list => {
+        if(year === 'all' || list.dataset.year === year){
+          list.style.display = 'block';
+        } else {
+          list.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
