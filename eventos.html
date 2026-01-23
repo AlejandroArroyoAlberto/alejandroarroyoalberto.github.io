@@ -9,13 +9,15 @@
 <body>
 
 <header>
-<h1 class="logo-nombre">
-  <a href="index.html">
-    Alejandro<br>
-    Arroyo Alberto
-  </a>
-</h1>
+  <h1 class="logo-nombre">
+    <a href="index.html">
+      Alejandro<br>
+      Arroyo Alberto
+    </a>
+  </h1>
+
   <img src="images/headshot2.jpg" alt="Retrato Alejandro Arroyo" class="portrait">
+
   <nav>
     <a href="index.html#biografia">Biografía</a>
     <a href="videos.html">Videos</a>
@@ -32,210 +34,265 @@
 
   <!-- Filtros -->
   <div class="event-filters">
-    <button class="filter-btn active" data-year="all">Todos</button>
-    <button class="filter-btn" data-year="2022">2022</button>
-    <button class="filter-btn" data-year="2023">2023</button>
-    <button class="filter-btn" data-year="2024">2024</button>
-    <button class="filter-btn" data-year="2025">2025</button>
+    <button class="filter-btn active" data-year="all" aria-pressed="false">Todos</button>
+    <button class="filter-btn" data-year="2022" aria-pressed="false">2022</button>
+    <button class="filter-btn" data-year="2023" aria-pressed="false">2023</button>
+    <button class="filter-btn" data-year="2024" aria-pressed="false">2024</button>
+    <button class="filter-btn" data-year="2025" aria-pressed="false">2025</button>
+    <button class="filter-btn" data-year="2026" aria-pressed="false">2026</button>
   </div>
 
   <!-- Eventos 2022 -->
-<div class="event-list" data-year="2022">
+  <div class="event-list" data-year="2022">
 
-  <div class="evento">
-    <img src="images/eventos-2022-marzo-mastersrecital.jpg" alt="Masters Recital 2022">
-    <div class="evento-info">
-      <h3>Master's Piano Recital</h3>
-      <p><strong>Marzo 2022</strong> — Milne Auditorium, University of Northern Colorado</p>
-      <p>Recital de maestría con obras de Beethoven, Chopin, Scriabin y Ginastera</p>
+    <div class="evento">
+      <img src="images/eventos-2022-marzo-mastersrecital.jpg" alt="Masters Recital 2022">
+      <div class="evento-info">
+        <h3>Master's Piano Recital</h3>
+        <p><strong>Marzo 2022</strong> — Milne Auditorium, University of Northern Colorado</p>
+        <p>Recital de maestría con obras de Beethoven, Chopin, Scriabin y Ginastera</p>
+      </div>
     </div>
+
+    <div class="evento">
+      <img src="images/eventos-2022-abril-southard.jpg" alt="Southard 2022">
+      <div class="evento-info">
+        <h3>Southard Music Competition</h3>
+        <p><strong>Abril 2022</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
+        <p>Segundo Lugar</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <img src="images/eventos-2022-abril-uncobands.jpg" alt="UNC Bands 2022">
+      <div class="evento-info">
+        <h3>UNC Bands Spring Concert</h3>
+        <p><strong>Abril 2022</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
+        <p>Colaboración como pianista con la Symphonic Band de UNC.</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <img src="images/eventos-2022-junio-texasstate.jpg" alt="Texas State Festival 2022">
+      <div class="evento-info">
+        <h3>Texas State International Piano Festival</h3>
+        <p><strong>Junio 2022</strong> — Texas State University</p>
+        <p>Finalista en el 2nd Texas State International Piano Competition y Premio a la Obra Comisionada "Prelude to a Saturn's G" por la compositora Kye Ryung-Park.</p>
+      </div>
+    </div>
+
   </div>
 
-  <div class="evento">
-    <img src="images/eventos-2022-abril-southard.jpg" alt="Southard 2022">
-    <div class="evento-info">
-      <h3>Southard Music Competition</h3>
-      <p><strong>Abril 2022</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
-      <p>Segundo Lugar</p>
+  <!-- Eventos 2023 -->
+  <div class="event-list" data-year="2023">
+
+    <div class="evento">
+      <img src="images/eventos-2023-marzo-allstate.jpg" alt="All State 2023">
+      <div class="evento-info">
+        <h3>All State Music Festival</h3>
+        <p><strong>Marzo 2023</strong> — Union Colony Civic Center. Greeley, Colorado</p>
+        <p>Pianista de la Symphonic Band de UNC en el All-State Colorado Bands Festival.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="evento">
-    <img src="images/eventos-2022-abril-uncobands.jpg" alt="UNC Bands 2022">
-    <div class="evento-info">
-      <h3>UNC Bands Spring Concert</h3>
-      <p><strong>Abril 2022</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
-      <p>Colaboración como pianista con la Symphonic Band de UNC.</p>
+    <div class="evento">
+      <img src="images/eventos-2023-marzo-uncobands.jpg" alt="UNC Bands 2023">
+      <div class="evento-info">
+        <h3>UNC Bands Spring Concert</h3>
+        <p><strong>Marzo 2023</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
+        <p>Participación con ensambles de viento como pianista colaborador.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="evento">
-    <img src="images/eventos-2022-junio-texasstate.jpg" alt="Texas State Festival 2022">
-    <div class="evento-info">
-      <h3>Texas State International Piano Festival</h3>
-      <p><strong>Junio 2022</strong> — Texas State University</p>
-      <p>Finalista en el 2nd Texas State International Piano Competition y Premio a la Obra Comisionada "Prelude to a Saturn's G" por la compositora Kye Ryung-Park.</p>
+    <div class="evento">
+      <img src="images/eventos-2023-abril-outstanding.jpg" alt="Outstanding Student 2023">
+      <div class="evento-info">
+        <h3>Outstanding Student Recital</h3>
+        <p><strong>Abril 2023</strong> — Milne Auditorium, University of Northern Colorado</p>
+        <p>Reconocimiento con participación en el recital de estudiantes destacados.</p>
+      </div>
     </div>
-  </div>
 
-</div>
-
-<!-- Eventos 2023 -->
-<div class="event-list" data-year="2023">
-
-  <div class="evento">
-    <img src="images/eventos-2023-marzo-allstate.jpg" alt="All State 2023">
-    <div class="evento-info">
-      <h3>All State Music Festival</h3>
-      <p><strong>Marzo 2023</strong> — Union Colony Civic Center. Greeley, Colorado</p>
-      <p>Pianista de la Symphonic Band de UNC en el All-State Colorado Bands Festival.</p>
+    <div class="evento">
+      <img src="images/eventos-2023-abril-southard.jpg" alt="Southard 2023">
+      <div class="evento-info">
+        <h3>Southard Music Competition</h3>
+        <p><strong>17 de Abril, 2023</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
+        <p>Primer Lugar</p>
+      </div>
     </div>
-  </div>
 
-  <div class="evento">
-    <img src="images/eventos-2023-marzo-uncobands.jpg" alt="UNC Bands 2023">
-    <div class="evento-info">
-      <h3>UNC Bands Spring Concert</h3>
-      <p><strong>Marzo 2023</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
-      <p>Participación con ensambles de viento como pianista colaborador.</p>
+    <div class="evento">
+      <img src="images/eventos-2023-noviembre-doctoral.jpg" alt="Doctoral Recital 2023">
+      <div class="evento-info">
+        <h3>Doctoral Recital</h3>
+        <p><strong>Noviembre 2023</strong> — Milne Auditorium, University of Northern Colorado</p>
+        <p>Obras de Debussy, Kapustin, Chopin, Scriabin y Brahms.</p>
+      </div>
     </div>
-  </div>
 
-  <div class="evento">
-    <img src="images/eventos-2023-abril-outstanding.jpg" alt="Outstanding Student 2023">
-    <div class="evento-info">
-      <h3>Outstanding Student Recital</h3>
-      <p><strong>Abril 2023</strong> — Milne Auditorium, University of Northern Colorado</p>
-      <p>Reconocimiento con participación en el recital de estudiantes destacados.</p>
+    <div class="evento">
+      <img src="images/eventos-2023-diciembre-mx.jpg" alt="Mexico Recital 2023">
+      <div class="evento-info">
+        <h3>Concurso Internacional José Jacinto Cuevas</h3>
+        <p><strong>23 Noviembre - 2 Diciembre, 2023</strong> — Teatro Felipe Carrillo. Yucatán, México</p>
+        <p>Cuarto Lugar</p>
+      </div>
     </div>
-  </div>
 
-  <div class="evento">
-    <img src="images/eventos-2023-abril-southard.jpg" alt="Southard 2023">
-    <div class="evento-info">
-      <h3>Southard Music Competition</h3>
-      <p><strong>17 de Abril, 2023</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
-      <p>Primer Lugar</p>
+    <div class="evento">
+      <img src="images/eventos-2023-diciembre-maxmsp.jpg" alt="MAX/MSP 2023">
+      <div class="evento-info">
+        <h3>MAX/MSP Electronic Project</h3>
+        <p><strong>Diciembre 2023</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
+        <p>Presentación de piezas interactivas con medios digitales y piano.</p>
+      </div>
     </div>
+
   </div>
-
-  <div class="evento">
-    <img src="images/eventos-2023-noviembre-doctoral.jpg" alt="Doctoral Recital 2023">
-    <div class="evento-info">
-      <h3>Doctoral Recital</h3>
-      <p><strong>Noviembre 2023</strong> — Milne Auditorium, University of Northern Colorado</p>
-      <p>Obras de Debussy, Kapustin, Chopin, Scriabin y Brahms.</p>
-    </div>
-  </div>
-
-  <div class="evento">
-    <img src="images/eventos-2023-diciembre-mx.jpg" alt="Mexico Recital 2023">
-    <div class="evento-info">
-      <h3>Concurso Internacional José Jacinto Cuevas</h3>
-      <p><strong>23 Noviembre - 2 Diciembre, 2023</strong> — Teatro Felipe Carrillo. Yucatán, México</p>
-      <p>Cuarto Lugar</p>
-    </div>
-  </div>
-
-  <div class="evento">
-    <img src="images/eventos-2023-diciembre-maxmsp.jpg" alt="MAX/MSP 2023">
-    <div class="evento-info">
-      <h3>MAX/MSP Electronic Project</h3>
-      <p><strong>Diciembre 2023</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
-      <p>Presentación de piezas interactivas con medios digitales y piano.</p>
-    </div>
-  </div>
-
-</div>
-
 
   <!-- Eventos 2024 -->
   <div class="event-list" data-year="2024">
+
     <div class="evento">
-      <img src="images/eventos-2024-enero-seoul.jpg" alt="Seoul Recital 2025">
+      <img src="images/eventos-2024-enero-seoul.jpg" alt="Guest Artist Recital - UNC (2024)">
       <div class="evento-info">
         <h3>Guest Artist Recital</h3>
-        <p><strong>Enero 22, 2024</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
+        <p><strong>22 de Enero, 2024</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
         <p>En colaboración con Seoul National University of Education.</p>
       </div>
     </div>
+
     <div class="evento">
       <img src="images/eventos-2024-febrero-southard.jpg" alt="Southard 2024">
       <div class="evento-info">
         <h3>Ganadores Angie Southard Music Competition</h3>
-        <p><strong>Febrero 26, 2024</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
+        <p><strong>26 de Febrero, 2024</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
         <p>Primer Lugar</p>
       </div>
     </div>
+
     <div class="evento">
-      <img src="images/eventos-2024-junio-elsalvador.jpg" alt="El Salvador 2024">
+      <img src="images/eventos-2024-junio-elsalvador.jpg" alt="Recital en Fundación Miguel Ángel Ramírez (2024)">
       <div class="evento-info">
         <h3>Recital en Fundación Miguel Ángel Ramírez</h3>
         <p><strong>Junio 2024</strong> — Panchimalco, El Salvador</p>
         <p>Recital de piano con obras de Beethoven, Chopin, Scriabin y Liszt</p>
       </div>
     </div>
+
     <div class="evento">
-      <img src="images/eventos-2024-julio-crfestival.jpg" alt="CR Festival 2024">
+      <img src="images/eventos-2024-julio-crfestival.jpg" alt="Costa Rica Piano Festival (2024)">
       <div class="evento-info">
         <h3>Costa Rica Piano Festival</h3>
-        <p><strong>Julio 12, 2024</strong> — Artista Invitado al Concierto de Clausura. Teatro Nacional de Costa Rica</p>
+        <p><strong>12 de Julio, 2024</strong> — Teatro Nacional de Costa Rica</p>
         <p>Artista Invitado al Concierto de Clausura.</p>
       </div>
     </div>
+
     <div class="evento">
-      <img src="images/eventos-2024-agosto-cipaf.jpg" alt="CIPAF 2024">
+      <img src="images/eventos-2024-agosto-cipaf.jpg" alt="Colorado International Piano Academy & Festival (2024)">
       <div class="evento-info">
         <h3>Colorado International Piano Academy & Festival</h3>
-        <p><strong>Julio 25 - Agosto 3, 2024</strong> — University of Northern Colorado</p>
+        <p><strong>25 de Julio - 3 de Agosto, 2024</strong> — University of Northern Colorado</p>
         <p>Program Manager y Profesor Asistente.</p>
       </div>
     </div>
+
     <div class="evento">
-      <img src="images/eventos-2024-noviembre-entropy.jpg" alt="Entropy Project 2024">
+      <img src="images/eventos-2024-noviembre-entropy.jpg" alt="Entropy & Offbeatness (2024)">
       <div class="evento-info">
         <h3>Entropy & Offbeatness</h3>
-        <p><strong>Noviembre 11, 2024</strong> — Skinner Music Library, University of Northern Colorado.</p>
-      <p>Proyecto Doctoral en Teoría Musical.</p>
+        <p><strong>11 de Noviembre, 2024</strong> — Skinner Music Library, University of Northern Colorado</p>
+        <p>Proyecto Doctoral en Teoría Musical.</p>
       </div>
     </div>
+
   </div>
 
   <!-- Eventos 2025 -->
   <div class="event-list" data-year="2025">
+
     <div class="evento">
-      <img src="images/eventos-2025-febrero-uncrach.jpg" alt="UNC Concerto Rach 2025">
+      <img src="images/eventos-2025-febrero-uncrach.jpg" alt="UNC Concerto Winners Concert (2025)">
       <div class="evento-info">
         <h3>UNC Concerto Competition Winners Concert</h3>
-        <p><strong>Febrero 17, 2025</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
+        <p><strong>17 de Febrero, 2025</strong> — Campus Commons Performance Hall, University of Northern Colorado</p>
         <p>Solista con la University of Northern Colorado Symphony Orchestra y Dr. Andrés Felipe Jaime. Rachmaninov Piano Concerto No. 2 Op. 18</p>
       </div>
     </div>
+
     <div class="evento">
-      <img src="images/eventos-2025-abril-staupe.jpg" alt="Staupe Masterclass 2025">
+      <img src="images/eventos-2025-abril-staupe.jpg" alt="Masterclass Andrew Staupe (2025)">
       <div class="evento-info">
         <h3>Masterclass con Dr. Andrew Staupe (University of Houston)</h3>
-        <p><strong>Abril 21, 2025</strong> — Campus Commons Rehearsal Hall, University of Northern Colorado</p>
+        <p><strong>21 de Abril, 2025</strong> — Campus Commons Rehearsal Hall, University of Northern Colorado</p>
         <p>Masterclass con Dr. Staupe (University of Houston)</p>
       </div>
     </div>
+
     <div class="evento">
-      <img src="images/eventos-2025-mayo-doctoralrecital.jpg" alt="Doctoral Recital 2025">
+      <img src="images/eventos-2025-mayo-doctoralrecital.jpg" alt="Recital Doctoral (2025)">
       <div class="evento-info">
         <h3>Recital Doctoral</h3>
         <p><strong>Mayo 2025</strong> — Milne Auditorium, University of Northern Colorado</p>
         <p>Obras de Manuel Matarrita, F. Liszt, N. Kapustin y A. Scriabin.</p>
       </div>
     </div>
+
     <div class="evento">
-      <img src="images/eventos-2025-junio-kushkatan.jpg" alt="Kushkatan 2025">
+      <img src="images/eventos-2025-junio-kushkatan.jpg" alt="Conferencia-Recital Sonidos de Kushkatan (2025)">
       <div class="evento-info">
         <h3>Conferencia-Recital: “Sonidos de Kushkatan: Nahualismo, nación e imaginarios indígenas”.</h3>
-        <p><strong>Junio 21, 2025</strong> — Panchimalco, El Salvador</p>
+        <p><strong>21 de Junio, 2025</strong> — Panchimalco, El Salvador</p>
         <p>Conferencia-Recital con presentación de colección privada de instrumentos prehispánicos en la fundación sin fines de lucro Miguel Ángel Ramírez</p>
       </div>
     </div>
+
+    <!-- NUEVOS EVENTOS 2025 (UCR - Sala María Clara Cullell) -->
+    <div class="evento">
+      <img src="images/eventos-2025-septiembre-conferencia.jpg" alt="Conferencia - Sala María Clara Cullell, Universidad de Costa Rica (2025)">
+      <div class="evento-info">
+        <h3>Conferencia: La memoria cultural de El salvador y la música para piano de María de Baratta: Kushkatan, Nahualismo y la representación de la indigeneidad.</h3>
+        <p><strong>Septiembre 2025</strong> — Sala María Clara Cullell, Universidad de Costa Rica</p>
+        <p>Conferencia en la Universidad de Costa Rica.</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <img src="images/eventos-2025-septiembre-recital.jpg" alt="Recital - Sala María Clara Cullell, Universidad de Costa Rica (2025)">
+      <div class="evento-info">
+        <h3>Recital de piano.</h3>
+        <p><strong>Septiembre 2025</strong> — Sala María Clara Cullell, Universidad de Costa Rica</p>
+        <p>Obras de M. Matarrita, F. Liszt, N. Kapustin y A. Scriabin.</p>
+      </div>
+    </div>
+
   </div>
+
+  <!-- Eventos 2026 -->
+  <div class="event-list" data-year="2026">
+
+    <div class="evento">
+      <img src="images/eventos-2026-enero-asturias.jpg" alt="Conferencia: De Preludio a Leyenda - Teatro de la Facultad de Artes, UCR (2026)">
+      <div class="evento-info">
+        <h3>Conferencia-Recital: “De Preludio a Leyenda: La huella del rasgueado flamenco en Asturias de Albéniz”</h3>
+        <p><strong>Enero 2026</strong> — Teatro de la Facultad de Artes, Universidad de Costa Rica</p>
+        <p>Conferencia-recital sobre Asturias de Albéniz y la huella del rasgueado flamenco.</p>
+      </div>
+    </div>
+
+    <div class="evento">
+      <img src="images/eventos-2026-enero-goyescas.jpg" alt="Concierto: Goyescas (Granados) - Aula Magna, UCR (2026)">
+      <div class="evento-info">
+        <h3>Concierto: Integral de <em>Goyescas</em> (Enrique Granados)</h3>
+        <p><strong>Enero 2026</strong> — Aula Magna, Universidad de Costa Rica</p>
+        <p>Concierto como parte de la integral de <em>Goyescas</em> de Enrique Granados.</p>
+      </div>
+    </div>
+
+  </div>
+
 </section>
 
 <footer>
@@ -249,12 +306,18 @@
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('active'));
+      buttons.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
+
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
 
       const year = btn.dataset.year;
+
       lists.forEach(list => {
-        if(year === 'all' || list.dataset.year === year){
+        if (year === 'all' || list.dataset.year === year) {
           list.style.display = 'block';
         } else {
           list.style.display = 'none';
@@ -262,9 +325,10 @@
       });
     });
   });
-    // seleccionar 2025 como default
-  document.querySelector('.filter-btn[data-year="2025"]').click();
-</script>
+
+  // seleccionar 2026 como default (seguro)
+  const defaultBtn = document.querySelector('.filter-btn[data-year="2026"]');
+  if (defaultBtn) defaultBtn.click();
 </script>
 
 </body>
